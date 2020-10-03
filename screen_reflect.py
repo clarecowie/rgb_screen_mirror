@@ -31,6 +31,7 @@ def get_available_leds():
 
 
 # get all led positions, add flag for device type
+leds = get_available_leds()
 df = pd.DataFrame([],columns=['x','y','device_type'])
 for d in device_list:
     
